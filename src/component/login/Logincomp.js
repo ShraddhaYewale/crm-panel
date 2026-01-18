@@ -8,7 +8,7 @@ export const Logincomp = () => {
         <Col>
           <h2 className="text-info text-center">Client Login</h2>
           <hr />
-
+    
           <Form>
             <Form.Group className="mb-3">
               <Form.Label className="text-start w-100">Email Address</Form.Label>
