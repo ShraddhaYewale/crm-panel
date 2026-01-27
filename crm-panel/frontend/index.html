@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRM Panel • Professional Dashboard</title>
+  
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-header d-flex align-items-center">
+    <i class="bi bi-stars fs-3 me-3 text-primary"></i>
+    <h4 class="mb-0 fw-bold">Elevate CRM</h4>
+  </div>
+  
+  <nav class="mt-4">
+    <ul class="nav flex-column">
+      <li class="nav-item"><a href="index.html" class="nav-link active"><i class="bi bi-grid-1x2"></i> Dashboard</a></li>
+      <li class="nav-item"><a href="contacts.html" class="nav-link"><i class="bi bi-people"></i> Contacts</a></li>
+      <li class="nav-item"><a href="leads.html" class="nav-link"><i class="bi bi-funnel"></i> Leads / Pipeline</a></li>
+      <li class="nav-item"><a href="deals.html" class="nav-link"><i class="bi bi-currency-dollar"></i> Deals</a></li>
+      <li class="nav-item"><a href="tasks.html" class="nav-link"><i class="bi bi-list-check"></i> Tasks & Activities</a></li>
+      <li class="nav-item"><a href="analytics.html" class="nav-link"><i class="bi bi-bar-chart"></i> Analytics</a></li>
+      <li class="nav-item"><a href="settings.html" class="nav-link"><i class="bi bi-gear"></i> Settings</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Topbar + Content -->
+<div class="main-content">
+
+  <!-- Top Navigation -->
+  <div class="topbar d-flex align-items-center justify-content-between px-4 py-3 sticky-top">
+    <div class="d-flex align-items-center">
+      <button class="btn btn-link text-white d-lg-none me-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false">
+        <i class="bi bi-list fs-3"></i>
+      </button>
+      <h5 class="mb-0 fw-semibold">Dashboard Overview</h5>
+    </div>
+    
+    <div class="d-flex align-items-center gap-3">
+      <div class="position-relative">
+        <i class="bi bi-bell fs-5"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <img src="https://ui-avatars.com/api/?name=Shraddha&background=4f46e5&color=fff&bold=true&size=128" alt="User" class="rounded-circle" width="38" height="38">
+        <span class="d-none d-md-inline">Shraddha</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Dashboard Content -->
+  <div class="container-fluid py-4">
+
+    <!-- Quick Stats Row -->
+    <div class="row g-4 mb-5">
+      <div class="col-6 col-md-3">
+        <div class="card h-100 p-4">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <p class="text-secondary mb-1 small">Total Contacts</p>
+              <div class="stat-number">1,847</div>
+            </div>
+            <i class="bi bi-people fs-2 text-primary opacity-75"></i>
+          </div>
+          <div class="mt-3">
+            <span class="badge bg-success-subtle text-success badge-pill">+12% this month</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card h-100 p-4">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <p class="text-secondary mb-1 small">Active Leads</p>
+              <div class="stat-number">423</div>
+            </div>
+            <i class="bi bi-funnel fs-2 text-primary opacity-75"></i>
+          </div>
+          <div class="mt-3">
+            <span class="badge bg-info-subtle text-info badge-pill">68 new</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card h-100 p-4">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <p class="text-secondary mb-1 small">Conversion Rate</p>
+              <div class="stat-number">24.8%</div>
+            </div>
+            <i class="bi bi-graph-up fs-2 text-primary opacity-75"></i>
+          </div>
+          <div class="mt-3">
+            <span class="badge bg-success-subtle text-success badge-pill">↑ 3.2%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card h-100 p-4">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <p class="text-secondary mb-1 small">Revenue This Month</p>
+              <div class="stat-number">₹8.42L</div>
+            </div>
+            <i class="bi bi-currency-rupee fs-2 text-primary opacity-75"></i>
+          </div>
+          <div class="mt-3">
+            <span class="badge bg-warning-subtle text-warning badge-pill">Goal 85%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Two Column Layout -->
+    <div class="row g-4">
+
+      <!-- Recent Leads / Pipeline -->
+      <div class="col-lg-8">
+        <div class="card h-100">
+          <div class="card-header bg-transparent border-bottom">
+            <h6 class="mb-0 fw-semibold">Sales Pipeline Overview</h6>
+          </div>
+          <div class="card-body">
+            <div class="row g-3 text-center">
+              <div class="col-6 col-md-3">
+                <div class="p-3 glass">
+                  <h5 class="mb-1">New</h5>
+                  <div class="fs-3 fw-bold text-info">142</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="p-3 glass">
+                  <h5 class="mb-1">Contacted</h5>
+                  <div class="fs-3 fw-bold text-primary">98</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="p-3 glass">
+                  <h5 class="mb-1">Qualified</h5>
+                  <div class="fs-3 fw-bold text-warning">64</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="p-3 glass">
+                  <h5 class="mb-1">Closed Won</h5>
+                  <div class="fs-3 fw-bold text-success">39</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <h6 class="mb-3">Recent Activities</h6>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent border-bottom py-3">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <strong>Call with Priya Sharma</strong><br>
+                      <small class="text-secondary">Discussion about enterprise plan</small>
+                    </div>
+                    <small class="text-muted">2h ago</small>
+                  </div>
+                </li>
+                <li class="list-group-item bg-transparent border-bottom py-3">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <strong>Email sent to TechNova</strong><br>
+                      <small class="text-secondary">Proposal v2.1 attached</small>
+                    </div>
+                    <small class="text-muted">Yesterday</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Sidebar Widgets -->
+      <div class="col-lg-4">
+
+        <!-- Tasks -->
+        <div class="card mb-4">
+          <div class="card-header bg-transparent border-bottom">
+            <h6 class="mb-0 fw-semibold">My Tasks</h6>
+          </div>
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <input class="form-check-input me-3" type="checkbox" checked>
+              <div class="flex-grow-1">
+                <p class="mb-0">Follow-up with Apex Corp</p>
+                <small class="text-secondary">Today 3:00 PM</small>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+              <input class="form-check-input me-3" type="checkbox">
+              <div class="flex-grow-1">
+                <p class="mb-0">Prepare Q1 report</p>
+                <small class="text-secondary">Tomorrow</small>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <input class="form-check-input me-3" type="checkbox">
+              <div class="flex-grow-1">
+                <p class="mb-0">Demo call - Global Systems</p>
+                <small class="text-secondary">Jan 28, 11 AM</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="card">
+          <div class="card-header bg-transparent border-bottom">
+            <h6 class="mb-0 fw-semibold">Quick Actions</h6>
+          </div>
+          <div class="card-body d-grid gap-3">
+            <button class="btn btn-primary btn-lg">+ New Contact</button>
+            <button class="btn btn-outline-light">+ New Lead</button>
+            <button class="btn btn-outline-light">Schedule Meeting</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+  // Optional: better mobile sidebar experience
+  document.querySelector('[data-bs-toggle="collapse"]').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

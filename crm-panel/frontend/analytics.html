@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Analytics • Elevate CRM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-header d-flex align-items-center">
+    <i class="bi bi-stars fs-3 me-3 text-primary"></i>
+    <h4 class="mb-0 fw-bold">Elevate CRM</h4>
+  </div>
+  
+  <nav class="mt-4">
+    <ul class="nav flex-column">
+      <li class="nav-item"><a href="index.html" class="nav-link"><i class="bi bi-grid-1x2"></i> Dashboard</a></li>
+      <li class="nav-item"><a href="contacts.html" class="nav-link"><i class="bi bi-people"></i> Contacts</a></li>
+      <li class="nav-item"><a href="leads.html" class="nav-link"><i class="bi bi-funnel"></i> Leads / Pipeline</a></li>
+      <li class="nav-item"><a href="deals.html" class="nav-link"><i class="bi bi-currency-dollar"></i> Deals</a></li>
+      <li class="nav-item"><a href="tasks.html" class="nav-link"><i class="bi bi-list-check"></i> Tasks & Activities</a></li>
+      <li class="nav-item"><a href="analytics.html" class="nav-link active"><i class="bi bi-bar-chart"></i> Analytics</a></li>
+      <li class="nav-item"><a href="settings.html" class="nav-link"><i class="bi bi-gear"></i> Settings</a></li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Main content -->
+<div class="main-content">
+
+  <!-- Topbar -->
+  <div class="topbar d-flex align-items-center justify-content-between px-4 py-3 sticky-top">
+    <div class="d-flex align-items-center">
+      <button class="btn btn-link text-white d-lg-none me-3" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false">
+        <i class="bi bi-list fs-3"></i>
+      </button>
+      <h5 class="mb-0 fw-semibold">Analytics & Reports</h5>
+    </div>
+    
+    <div class="d-flex align-items-center gap-3">
+      <div class="position-relative">
+        <i class="bi bi-bell fs-5"></i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <img src="https://ui-avatars.com/api/?name=Shraddha&background=4f46e5&color=fff&bold=true&size=128" alt="User" class="rounded-circle" width="38" height="38">
+        <span class="d-none d-md-inline">Shraddha</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page content -->
+  <div class="container-fluid py-4">
+
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <h6 class="mb-0">Revenue Trend (Last 6 Months)</h6>
+            <select class="form-select form-select-sm w-auto">
+              <option>6 months</option>
+              <option>12 months</option>
+              <option>All time</option>
+            </select>
+          </div>
+          <div class="card-body text-center py-5">
+            <p class="text-secondary mb-4">Chart placeholder – ready for Chart.js integration</p>
+            <div class="bg-dark-subtle rounded p-5">
+              <i class="bi bi-graph-up-arrow fs-1 text-primary"></i>
+              <p class="mt-3 fw-semibold">Revenue growing 18% MoM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h6 class="mb-0">Conversion Rate by Source</h6>
+          </div>
+          <div class="card-body text-center py-5">
+            <p class="text-secondary mb-4">Add pie/donut chart here later</p>
+            <div class="d-flex justify-content-around flex-wrap gap-4 mt-4">
+              <div class="text-center">
+                <div class="fs-3 fw-bold text-success">32%</div>
+                <small>Website</small>
+              </div>
+              <div class="text-center">
+                <div class="fs-3 fw-bold text-info">24%</div>
+                <small>Referrals</small>
+              </div>
+              <div class="text-center">
+                <div class="fs-3 fw-bold text-warning">19%</div>
+                <small>LinkedIn</small>
+              </div>
+              <div class="text-center">
+                <div class="fs-3 fw-bold text-danger">14%</div>
+                <small>Cold Email</small>
+              </div>
+              <div class="text-center">
+                <div class="fs-3 fw-bold text-secondary">11%</div>
+                <small>Others</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-header">
+            <h6 class="mb-0">Top Performers (This Quarter)</h6>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center py-3">
+                Shraddha
+                <span class="badge bg-success">₹24.8L closed</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center py-3">
+                Rahul
+                <span class="badge bg-primary">₹15.2L closed</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center py-3">
+                Priya
+                <span class="badge bg-info">₹9.1L closed</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between align-items-center py-3">
+                Amit
+                <span class="badge bg-secondary">₹6.4L closed</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h6 class="mb-0">Quick Stats</h6>
+          </div>
+          <div class="card-body">
+            <div class="d-grid gap-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <span>Win Rate</span>
+                <strong class="text-success">41%</strong>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span>Average Deal Size</span>
+                <strong>₹7.8L</strong>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span>Average Sales Cycle</span>
+                <strong>38 days</strong>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span>Deals Closed This Month</span>
+                <strong>14</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Bootstrap JS + mobile sidebar toggle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+  document.querySelector('[data-bs-toggle="collapse"]').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>
